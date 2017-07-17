@@ -1,0 +1,129 @@
+$coral: #FF7346;
+$almost-white: #fefefe;
+$silver: #ccc;
+$dark-gray: #333;
+
+$altbg:#7d7d7d;
+$kreme:#fffdf8;
+$focus:#46c6ff;
+$errors:#ff2900;
+$grey-txt:#3c3c3c;
+$greenl:#00ff00;
+$dolargreen:#a8f980;
+$altfocus:#11250b;
+
+$menufont:'Lato', sans-serif;
+
+//transitions
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+
+//keyframes
+@mixin keyframes($box) {
+  @-webkit-keyframes #{$box} {
+    @content; 
+  }
+  @-moz-keyframes #{$box} {
+    @content;
+  }
+  @-ms-keyframes #{$box} {
+    @content;
+  }
+  @keyframes #{$box} {
+    @content;
+  } 
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+ //background-image: linear-gradient(hotpink, tomato);
+//@include linear-gradient(hotpink, tomato);
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+//.box { @include border-radius(10px); }
+// box -shadows
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+//@include box-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.075), inset);
+
+
+//rgba colors
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+//@include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+
+
+
+@mixin breakpoint($point) {
+      @if $point == extralarge {
+     @media (min-width: 85.37em) { @content ; }
+  }
+   @else if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+  }
+    @else if $point == smallmobile {
+     @media (max-width: 22.5em)  { @content ; }
+
+  }
+}
+
+body {
+
+	background:white;
+	color: #fff;
+	font-family:$menufont;
+	margin:0px 0px;
+    h1{
+        color:white;
+    }
+    h3{
+        color:lightgray;
+    }
+    p{
+        font-size:24px;
+        color:lightblue;
+       text-decoration:underline;
+    }
+}

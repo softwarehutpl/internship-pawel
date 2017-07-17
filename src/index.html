@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta name="description" content="#">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__main">
+      <header class="header">
+        <div class="header__block"><img class="header__block__logo" src=<%= require("./img/logo.png") %> ></div>
+        <nav class="header__menu">
+          <ul class="header-menu__nav">
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">HOME</a></li>
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">About</a></li>
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">Portfolio</a></li>
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">Blog</a></li>
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">Archives</a></li>
+            <li class="header-menu__nav__item"><a href="#" class="headerbg-menu__nav__item__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__search"> <input type="text" name="name" placeholder="Search" class="header__search__input"></div>
+        <div class="header__contener">
+          <div class="header__contener__title">
+            <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+          </div>
+          <div class="header__contener__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
+              diam.</p>
+              <p> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed dignissim lacinia nunc.
+              Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </p>
+          </div>
+            <div class="header__contener__jubotron"><button  href="#" class="header__contener__jubotron__btn">See Our Work</button></div>
+            <div class="header__contener__slider-place">
+                <img class="header__contener__slider-place__slide" src=<%= require("./img/monitor.png") %> >
+            </div>
+        </div>
+      </header>
+    </div>
+    <div>
+</body>
+
+</html>
