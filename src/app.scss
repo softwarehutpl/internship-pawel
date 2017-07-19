@@ -1,19 +1,14 @@
-$coral: #FF7346;
-$almost-white: #fefefe;
-$silver: #ccc;
 $dark-gray: #333;
 $simple-grey:#2f2f2f;
-
-$simple-light:#7d7d7d;
-$kreme:#fffdf8;
-$focus:#46c6ff;
-$errors:#ff2900;
+$simple-light:#464646;
 $grey-txt:#3c3c3c;
-$greenl:#00ff00;
-$dolargreen:#a8f980;
 $altfocus:#11250b;
+$alfa:rgba(47, 47, 47, 0.7) ;
+
 
 $menufont:'Lato', sans-serif;
+$helvetia:'Helvetica', 'Arial', sans-serif;
+
 
 //transitions
 @mixin transition($transition...) {
@@ -113,10 +108,14 @@ $menufont:'Lato', sans-serif;
 body {
   padding:0px 0px;
   margin:0px 0px;
+  font-family: $helvetia;
 .empty{
   clear:both;
 }
 
+// *{
+//  box-sizing: border-box;
+// }
 
 
   .wrapper{
@@ -126,41 +125,251 @@ body {
         margin:0 auto;
         padding:0px 0px;
     &__main{
-    	background:#3f3f3f url(./img/header-bg.png);
       width:940px;
       padding-left:10.83333333%;
       padding-right:10.83333333%;
-
+  
     .header{
+      padding-left:13.83333333%;
+      padding-right:13.83333333%;
+      background:#3f3f3f url(./img/header-bg.png);
       padding-top:25px;
+      height:492px;
+      margin-left:-13.83333333%;
+      margin-right:-13.83333333%;
+      border-bottom:3px solid #232323;
       &__block{
         &__logo{
           float:left;
         }
       }
       &__menu{
+        font-family: $helvetia;
         float:left;
           &__nav{
+            padding:6px 60px;
+            margin:0px;
               &__item{
                 list-style-type: none;
                 display:inline;
-                margin-right:0px;
-                 margin-left:0.8%;
                  border-right:1px solid $simple-light;
+                 padding-right:4.8%;
+                 padding-left:4.8%;
                 &__link{
+                  font-size:12px;
                   color:white;
                   text-decoration: none;
-                  padding:1.166666666%;
-                  background: $simple-grey;
-                  border-radius:5px;
+                  padding:7px;
+                  @include border-radius(7px);
                 }
+                 &__link:hover{
+                  background: $simple-grey;
+                  //box-shadow: inset 1px 1px 5px 0px rgba(0,0,0,0.30);
+                }
+                 &__link:focus{
+                  outline:none;
+                 }
+
               }
            }
-          &__search{
-            float:right;
           }
+           &__search{
+           float:left;
+           margin-left:160px;
+              &__input{
+              color:white;
+              width:150px;
+              padding:8px;
+              background:$simple-grey url(./img/search.svg) no-repeat;
+             background-size:15px 15px;
+             background-position:15px;
+              @include border-radius(20px);
+              outline:none;
+              border:none;
+              }
+            &__input:focus{
+              background: $simple-grey;
+            }
+    }
+    &__contener{
+      margin:30px auto;
+      &__slider-place{
+        &__info{
+          font-family: $helvetia;
+          margin-left:1%;
+          box-sizing:border-box;
+            float:left;
+             width:43%;
+            &__title{
+              font-weight:bold;
+              font-size:16px;
+            }
+            &__text{
+              font-size:12px;
+              width:90%;
+            }
+              &__jubotron{
+                    &__btn{
+                      font-size:13px;
+                      font-weight: bold;
+                      color:white;
+                      background:#9a9a9a;
+                      width:143px;
+                      height:45px;
+                      @include border-radius(3px);
+                      border:none;
+                    }
+             }
+        }
+          &__image{
+            float:right;
+           margin-right:8.51063829%;
+            max-width:46.8723404255%;
+          }
+      }
+    }
+
+
+
+    }
+
+    //****************************************** cards blocks***************************//
+  .main-contener{
+
+    &__block{
+      float:left;
+      box-sizing:border-box;
+      background:white;
+      color:black;
+      width:220px;
+      position:relative;top:-70px;
+
+      &__contener{
+       padding-top:2px;
+       padding-left:10.90909090%;
+       padding-right:10.90909090%;
+      
+          &__head{
+            margin:0px 0px;
+            font-size:12px;
+            font-family: $helvetia;
+          }
+          &__article{
+            &__h2{
+              font-size:14px;
+              color:#808080;
+            }
+
+            &__p{
+              color:black;
+              font-size:12px;
+            }
+          }
+            &__separator{
+              margin-top:20px;
+              width:100%;
+              height:5px;
+              background:black;
+              background:repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2) 3px,
+              rgba(0, 0, 0, 0.3) 3px,
+              rgba(0, 0, 0, 0.3) 6px);
+          }
+          &__foot{
+            margin-top:20px;
+            &__link{
+              font-family: $helvetia;
+              text-decoration:none;
+              font-weight:bold;
+              color:black;
+            }
+          }
+      }
+    }
+    &__block:nth-child(2){
+        margin-left:2.12765957%;
+      }
+      &__block:nth-child(3){
+        margin-left:2.12765957%;
+      }
+      &__block:nth-child(4){
+        margin-left:2.12765957%;
+      }
+    //********************************************* recent works*******************************//
+    &__work-block{
+      color:black;
+    
+    &__separator{
+              width:100%;
+              height:5px;
+              background:repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2) 3px,
+              rgba(0, 0, 0, 0.3) 3px,
+              rgba(0, 0, 0, 0.3) 6px);
+    }
+    &__text-block{
+      width:25%;
+        float:left;
+        box-sizing:border-box;
+    }
+      &__img-contener{
+        width:75%;
+        float:right;
+        margin-top:20px;
+        box-sizing:border-box;
+        font-size:12px;
+      
+      &__insert{
+        float:left;
+        color:white;
+        width:220px;
+        height:200px;
+         margin-left:2.12765957%;
+         margin-bottom:2.12765957%;
+        &__image{
+          position: absolute;
+					z-index: -10;
+        }
+        &__views{
+          visibility:hidden;
+          position:relative;
+          top:170px;
+          left:10px;
+
+        }
+        &__likes{
+          visibility:hidden;
+            position:relative;
+            top:143px;
+            left:80px;
+        }
+        &__comment{
+          visibility:hidden;
+            position:relative;
+            top:115px;
+            left:135px;
+        }
+        &:hover {
+          background:$alfa;
+          cursor:pointer;
+          &:hover .main-contener__work-block__img-contener__insert__views{
+            visibility:visible;
+          }
+           &:hover .main-contener__work-block__img-contener__insert__likes{
+            visibility:visible;
+          }
+           &:hover .main-contener__work-block__img-contener__insert__comment{
+            visibility:visible;
+          }
+
+      }
     }
     }
+
+
   }
+  }
+
+}
 }
 }

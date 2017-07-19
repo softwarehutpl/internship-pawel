@@ -16,7 +16,7 @@
   <div class="wrapper">
     <div class="wrapper__main">
       <header class="header">
-        <div class="header__block"><img class="header__block__logo" src="img/logo.png"></div>
+        <div class="header__block"><img class="header__block__logo" src=<%= require("./img/logo.png") %> ></div>
         <nav class="header__menu">
           <ul class="header__menu__nav">
             <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Home</a></li>
@@ -27,42 +27,102 @@
             <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Contact</a></li>
           </ul>
         </nav>
-        <div class="header__search"><input type="text" name="name" placeholder="Search" class="header__search__input"></div>
+        <div class="header__search"><input type="text" name="name" placeholder="        Search" class="header__search__input"></div>
         <div class="empty"></div>
         <div class="header__contener">
           <div class="header__contener__slider-place">
-            <div class="header__contener__slider-place__title">
-              <h1>Portfolio Website Theme: Perfect for Anyone asd asd </h1>
+            <div class="header__contener__slider-place__info">
+              <div class="header__contener__slider-place__info__title">
+                <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+              </div>
+              <div class="header__contener__slider-place__info__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+                  dapibus diam.
+                </p>
+                <p> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed dignissim lacinia nunc. Curabitur
+                  tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </p>
+              </div>
+              <div class="header__contener__slider-place__info__jubotron"><button href="#" class="header__contener__slider-place__info__jubotron__btn">See Our Work</button></div>
             </div>
-            <div class="header__contener__slider-place____text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-                dapibus diam.
-              </p>
-              <p> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed dignissim lacinia nunc. Curabitur
-                tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </p>
-            </div>
-            <div class="header__contener__slider-place__jubotron"><button href="#" class="header__contener__slider-place__jubotron__btn">See Our Work</button></div>
-            <img class="header__contener__slider-place__slide" src="img/monitor.png">
+            <img class="header__contener__slider-place__image" src=<%= require("./img/monitor.png") %> >
           </div>
         </div>
       </header>
+      <div class="empty"></div>
       <main class="main-contener">
         <section class="main-contener__block">
-          <header class="main-contener__block__head">
-            <h1>What I Can All Do</h1>
-          </header>
-          <article class="main-contener__block__article">
-            <h2 class="main-contener__block__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
-            <p class="main-contener__block__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea
-              cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos
-              viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
-            </p>
-            <div class="main-contener__block__separator"></div>
-          </article>
-          <footer class="main-contener__block__foot">
-            <a href="#" class="main-contener__block__foot">Read More</a>
-          </footer>
+          <div class="main-contener__block__contener">
+            <header class="main-contener__block__contener__head">
+              <h1>What I Can All Do</h1>
+            </header>
+            <article class="main-contener__block__contener__article">
+              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+                sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
+                Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
+              </p>
+              <div class="main-contener__block__contener__separator"></div>
+            </article>
+            <footer class="main-contener__block__contener__foot">
+              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            </footer>
+          </div>
         </section>
+        <section class="main-contener__block">
+          <div class="main-contener__block__contener">
+            <header class="main-contener__block__contener__head">
+              <h1>What I Can All Do</h1>
+            </header>
+            <article class="main-contener__block__contener__article">
+              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+                sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
+                Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
+              </p>
+              <div class="main-contener__block__contener__separator"></div>
+            </article>
+            <footer class="main-contener__block__contener__foot">
+              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            </footer>
+          </div>
+        </section>
+        <section class="main-contener__block">
+          <div class="main-contener__block__contener">
+            <header class="main-contener__block__contener__head">
+              <h1>What I Can All Do</h1>
+            </header>
+            <article class="main-contener__block__contener__article">
+              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+                sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
+                Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
+              </p>
+              <div class="main-contener__block__contener__separator"></div>
+            </article>
+            <footer class="main-contener__block__contener__foot">
+              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            </footer>
+          </div>
+        </section>
+        <section class="main-contener__block">
+          <div class="main-contener__block__contener">
+            <header class="main-contener__block__contener__head">
+              <h1>What I Can All Do</h1>
+            </header>
+            <article class="main-contener__block__contener__article">
+              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+                sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
+                Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
+              </p>
+              <div class="main-contener__block__contener__separator"></div>
+            </article>
+            <footer class="main-contener__block__contener__foot">
+              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            </footer>
+          </div>
+        </section>
+        <div class="empty"></div>
         <section class="main-contener__work-block">
           <h2 class="main-contener__work-block__h2">Recent Work</h2>
           <div class="main-contener__work-block__separator"></div>
@@ -74,21 +134,89 @@
           </div>
           <div class="main-contener__work-block__img-contener">
             <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image" src="img/img-recent2.png" alt="child">
-              <div class="main-contener__work-block__insert__scope"></div>
-              <div class="main-contener__work-block__insert__views">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__insert__likes">
+              <div class="main-contener__work-block__img-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__insert__comment">
+              <div class="main-contener__work-block__img-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
+            <div class="main-contener__work-block__img-contener__insert">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
+                <p>201 views</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__likes">
+                <p>95 likes</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__comment">
+                <p>10 comments</p>
+              </div>
+            </div>
+            <div class="main-contener__work-block__img-contener__insert">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
+                <p>201 views</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__likes">
+                <p>95 likes</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__comment">
+                <p>10 comments</p>
+              </div>
+            </div>
+            <div class="main-contener__work-block__img-contener__insert">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
+                <p>201 views</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__likes">
+                <p>95 likes</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__comment">
+                <p>10 comments</p>
+              </div>
+            </div>
+            <div class="main-contener__work-block__img-contener__insert">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
+                <p>201 views</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__likes">
+                <p>95 likes</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__comment">
+                <p>10 comments</p>
+              </div>
+            </div>
+            <div class="main-contener__work-block__img-contener__insert">
+              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__img-contener__insert__scope"></div>
+              <div class="main-contener__work-block__img-contener__insert__views">
+                <p>201 views</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__likes">
+                <p>95 likes</p>
+              </div>
+              <div class="main-contener__work-block__img-contener__insert__comment">
+                <p>10 comments</p>
+              </div>
+            </div>
+            
           </div>
+          
         </section>
       </main>
+      <div class="empty"></div>
       <footer class="footer">
         <div class="footer__contener">
           <div class="footer__contener__about">
@@ -103,9 +231,9 @@
         </div>
 
         <div class="footer__contener__bottom">
-         <img class="footer__contener__bottom__logo" src="img/logo.png">
-         <div class="footer__contener__bottom__separator-pion"></div>
-         <h4 class="footer__contener__bottom__h4">The Ultimate Portfolio Wordpress Theme on the Web t: (888) 842 - 8356  e: info@bestpsdfreebies.com</h4>
+          <img class="footer__contener__bottom__logo" src="img/logo.png">
+          <div class="footer__contener__bottom__separator-pion"></div>
+          <h4 class="footer__contener__bottom__h4">The Ultimate Portfolio Wordpress Theme on the Web t: (888) 842 - 8356 e: info@bestpsdfreebies.com</h4>
         </div>
       </footer>
     </div>
