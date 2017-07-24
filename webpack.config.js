@@ -67,7 +67,7 @@ module.exports = {
     },
     // plugins define new html webside , can add new to grow up project 
     plugins: [
-        //this is a first site 
+        //this is a first side 
         new HtmlWebpackPlugin({
             title: 'new project',
             minify: {

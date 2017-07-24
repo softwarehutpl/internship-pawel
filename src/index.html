@@ -16,215 +16,253 @@
   <div class="wrapper">
     <div class="wrapper__main">
       <header class="header">
-        <div class="hdcontaniner">
-        <div class="header__block"><img class="header__block__logo" src=<%= require("./img/logo.png") %> ></div>
+        <div class="header__center">
+        <div class="header__center__logotype">
+          <img class="header__center__logotype__logo" src=<%= require("./img/logo.png") %> >
          <div class="buttonnav" data-js="btnnav" ><Span></Span></div>
-        <nav class="header__menu">
-          <ul class="header__menu__nav">
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Home</a></li>
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">About</a></li>
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Portfolio</a></li>
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Blog</a></li>
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Archives</a></li>
-            <li class="header__menu__nav__item"><a href="#" class="header__menu__nav__item__link">Contact</a></li>
+        <nav class="header__center__logotype__menu">
+          <ul class="header__center__logotype__menu__nav">
+            <input type="text" name="name" placeholder=" Search" class="header__center__logotype__menu__nav__item small">
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">Home</a></li>
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">About</a></li>
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">Portfolio</a></li>
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">Blog</a></li>
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">Archives</a></li>
+            <li class="header__center__logotype__menu__nav__item"><a href="#" class="header__center__logotype__menu__nav__item__link">Contact</a></li>
           </ul>
         </nav>
-        <div class="header__search"><input type="text" name="name" placeholder="        Search" class="header__search__input"></div>
+        <div class="header__center__logotype__search"><input type="text" name="name" placeholder="        Search" class="header__center__logotype__search__input"></div>
+        </div>
         <div class="empty"></div>
-        <div class="header__contener">
-          <div class="header__contener__slider-place">
-            <div class="header__contener__slider-place__info">
-              <div class="header__contener__slider-place__info__title">
+        <div class="header__center__contener">
+
+          <div class="header__center__contener__slider-place">
+            <div class="siema">
+            
+              <div class="header__center__contener__slider-place__info">
+                <div class="header__center__contener__slider-place__info__textowe">
+              <div class="header__center__contener__slider-place__info__textowe__title">
                 <h1>Portfolio Website Theme: Perfect for Anyone</h1>
               </div>
-              <div class="header__contener__slider-place__info__text">
+              <div class="header__center__contener__slider-place__info__textowe__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
                   dapibus diam.
                 </p>
                 <p> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed dignissim lacinia nunc. Curabitur
                   tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </p>
               </div>
-              <div class="header__contener__slider-place__info__jubotron"><button href="#" class="header__contener__slider-place__info__jubotron__btn">See Our Work</button></div>
+              <div class="header__center__contener__slider-place__info__textowe__jubotron"><button href="#" data-js="hit" class="header__center__contener__slider-place__info__textowe__jubotron__btn">See Our Work</button></div>
             </div>
-            <img class="header__contener__slider-place__image" src=<%= require("./img/monitor.png") %> >
+              <img class="header__center__contener__slider-place__info__image" src=<%= require("./img/monitor.png") %> >
+            </div>
+            
+            <div class="header__center__contener__slider-place__info">
+                <div class="header__center__contener__slider-place__info__textowe">
+              <div class="header__center__contener__slider-place__info__textowe__title">
+                <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+              </div>
+              <div class="header__center__contener__slider-place__info__textowe__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+                  dapibus diam.
+                </p>
+                <p> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Sed dignissim lacinia nunc. Curabitur
+                  tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </p>
+              </div>
+              <div class="header__center__contener__slider-place__info__textowe__jubotron"><button href="#" class="header__center__contener__slider-place__info__textowe__jubotron__btn">See Our Work</button></div>
+            </div>
+              <img class="header__center__contener__slider-place__info__image" src=<%= require("./img/monitor.png") %> >
+            </div>
+
+            
+           
+            </div>
           </div>
         </div>
         </div>
       </header>
       <div class="empty"></div>
       <main class="main-contener">
-        <section class="main-contener__block">
-          <div class="main-contener__block__contener">
-            <header class="main-contener__block__contener__head">
+    <div class="main-contener__cards">
+        <section class="main-contener__cards__block">
+          <div class="main-contener__cards__block__contener">
+            <header class="main-contener__cards__block__contener__head">
               <h1>What I Can All Do</h1>
             </header>
-            <article class="main-contener__block__contener__article">
-              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
-              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+            <article class="main-contener__cards__block__contener__article">
+              <h2 class="main-contener__cards__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__cards__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
                 sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
                 Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
               </p>
-              <div class="main-contener__block__contener__separator"></div>
+              <div class="main-contener__cards__block__contener__separator"></div>
             </article>
-            <footer class="main-contener__block__contener__foot">
-              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            <footer class="main-contener__cards__block__contener__foot">
+              <a href="#" class="main-contener__cards__block__contener__foot__link">Read More</a>
             </footer>
           </div>
         </section>
-        <section class="main-contener__block">
-          <div class="main-contener__block__contener">
-            <header class="main-contener__block__contener__head">
+        
+        <section class="main-contener__cards__block">
+          <div class="main-contener__cards__block__contener">
+            <header class="main-contener__cards__block__contener__head">
               <h1>What I Can All Do</h1>
             </header>
-            <article class="main-contener__block__contener__article">
-              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
-              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+            <article class="main-contener__cards__block__contener__article">
+              <h2 class="main-contener__cards__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__cards__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
                 sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
                 Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
               </p>
-              <div class="main-contener__block__contener__separator"></div>
+              <div class="main-contener__cards__block__contener__separator"></div>
             </article>
-            <footer class="main-contener__block__contener__foot">
-              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            <footer class="main-contener__cards__block__contener__foot">
+              <a href="#" class="main-contener__cards__block__contener__foot__link">Read More</a>
             </footer>
           </div>
         </section>
-        <section class="main-contener__block">
-          <div class="main-contener__block__contener">
-            <header class="main-contener__block__contener__head">
+
+        <section class="main-contener__cards__block">
+          <div class="main-contener__cards__block__contener">
+            <header class="main-contener__cards__block__contener__head">
               <h1>What I Can All Do</h1>
             </header>
-            <article class="main-contener__block__contener__article">
-              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
-              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+            <article class="main-contener__cards__block__contener__article">
+              <h2 class="main-contener__cards__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__cards__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
                 sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
                 Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
               </p>
-              <div class="main-contener__block__contener__separator"></div>
+              <div class="main-contener__cards__block__contener__separator"></div>
             </article>
-            <footer class="main-contener__block__contener__foot">
-              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            <footer class="main-contener__cards__block__contener__foot">
+              <a href="#" class="main-contener__cards__block__contener__foot__link">Read More</a>
             </footer>
           </div>
         </section>
-        <section class="main-contener__block">
-          <div class="main-contener__block__contener">
-            <header class="main-contener__block__contener__head">
+
+        <section class="main-contener__cards__block">
+          <div class="main-contener__cards__block__contener">
+            <header class="main-contener__cards__block__contener__head">
               <h1>What I Can All Do</h1>
             </header>
-            <article class="main-contener__block__contener__article">
-              <h2 class="main-contener__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
-              <p class="main-contener__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
+            <article class="main-contener__cards__block__contener__article">
+              <h2 class="main-contener__cards__block__contener__article__h2">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h2>
+              <p class="main-contener__cards__block__contener__article__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete
                 sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re.
                 Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.
               </p>
-              <div class="main-contener__block__contener__separator"></div>
+              <div class="main-contener__cards__block__contener__separator"></div>
             </article>
-            <footer class="main-contener__block__contener__foot">
-              <a href="#" class="main-contener__block__contener__foot__link">Read More</a>
+            <footer class="main-contener__cards__block__contener__foot">
+              <a href="#" class="main-contener__cards__block__contener__foot__link">Read More</a>
             </footer>
           </div>
         </section>
+      </div>
         <div class="empty"></div>
         <section class="main-contener__work-block">
           <h2 class="main-contener__work-block__h2">Recent Work</h2>
           <div class="main-contener__work-block__separator"></div>
-            <div class="main-contener__work-block__text-block">
+          <div class="main-contener__work-block__all-contener">
+            <div class="main-contener__work-block__all-contener__text-block">
+            <h3 class="main-contener__work-block__all-contener__text-block__h3">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+            <p class="main-contener__work-block__all-contener__text-block__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea
+              cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos
+              viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+          </div> 
+       
+          <!-- <div class="main-contener__work-block"> -->
+            <!-- <div class="text-blok">
             <h3 class="main-contener__work-block__text-block__h3">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
             <p class="main-contener__work-block__text-block__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea
               cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos
               viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-          </div>  
-          <div class="main-contener__work-block__img-contener">
-            <div class="testowy">
-            <div class="text-blok">
-            <h3 class="main-contener__work-block__text-block__h3">Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
-            <p class="main-contener__work-block__text-block__p">Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea
-              cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos
-              viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-          </div>
+          </div> -->
 
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+          <div class="main-contener__work-block__all-contener__insert">
+              
+            </div>
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/img-recent2.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent1.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/img-recent1.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/img-recent3.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/img-recent3.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/recent3.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+             <div class="main-contener__work-block__all-contener__insert trik"></div> 
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/recent3.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/recent2.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/recent2.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            <div class="main-contener__work-block__img-contener__insert">
-              <img class="main-contener__work-block__img-contener__insert__image"  alt="child" src=<%= require("./img/recent4.png") %> >
-              <div class="main-contener__work-block__img-contener__insert__scope"></div>
-              <div class="main-contener__work-block__img-contener__insert__views">
+            <div class="main-contener__work-block__all-contener__insert">
+              <img class="main-contener__work-block__all-contener__insert__image"  alt="child" src=<%= require("./img/recent4.png") %> >
+              <div class="main-contener__work-block__all-contener__insert__scope"></div>
+              <div class="main-contener__work-block__all-contener__insert__views">
                 <p>201 views</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__likes">
+              <div class="main-contener__work-block__all-contener__insert__likes">
                 <p>95 likes</p>
               </div>
-              <div class="main-contener__work-block__img-contener__insert__comment">
+              <div class="main-contener__work-block__all-contener__insert__comment">
                 <p>10 comments</p>
               </div>
             </div>
-            
           </div>
-</div>
+          <!-- </div> -->
         </section>
       </main>
       <div class="empty"></div>
@@ -251,27 +289,31 @@
            <div class="footer__contener__about">
             <h2 class="footer__contener__about__h2">Twitter Widget</h2>
             <div class="footer__contener__about__separator"></div>
-            <p class="footer__contener__about__p">Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales
-              ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.</p>
-            <p class="footer__contener__about__p"> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas
-              mattis.
-            </p>
+            <p class="footer__contener__about__p">@pixelmater What an awesome design with great functionality :)</p>
+            <p class="footer__contener__about__psd">about 1 hour ago</p>
+            <p class="footer__contener__about__p">@designdude What an awesome design with great functionality :)</p>
+            <p class="footer__contener__about__psd">about 2 hour ago</p>
+            <p class="footer__contener__about__p">Follow @psdfreebies</p>
           </div>
-           <div class="footer__contener__about">
+          <div class="footer__contener__about">
             <h2 class="footer__contener__about__h2">Flickr Widget</h2>
             <div class="footer__contener__about__separator"></div>
-            <p class="footer__contener__about__p">Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales
-              ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.</p>
-            <p class="footer__contener__about__p"> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas
-              mattis.
-            </p>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
+            <div class="footer__contener__about__box"></div>
           </div>
         </div>
 
         <div class="footer__bottom">
-          <img class="footer__bottom__logo" src="img/logo.png">
-          <div class="footer__bottom__separator-pion"></div>
-          <p class="footer__bottom__p">The Ultimate Portfolio Wordpress Theme on the Web t: (888) 842 - 8356 e: info@bestpsdfreebies.com</p>
+          <div class="footer__bottom__contener">
+          <img class="footer__bottom__contener__logo" src="img/logo.png">
+          <div class="footer__bottom__contener__separator-pion"></div>
+          <p class="footer__bottom__contener__p">The Ultimate Portfolio Wordpress Theme on the Web t: (888) 842 - 8356 e: info@bestpsdfreebies.com</p>
         </div>
       </footer>
     </div>
