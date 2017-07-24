@@ -1,8 +1,11 @@
-
+import 'jquery';
 import css from './app.scss';
-
 import './burger.js';
-import './blok.js';
+import './blokowanie.js';
+import './slick/slikinit.js';
+import './slick/slick.js';
+import './slick/slick.css';
+import './slick/slick-theme.css';
 
 
 

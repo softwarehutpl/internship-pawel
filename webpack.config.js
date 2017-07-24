@@ -2,6 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 const webpack = require('webpack');
+// var url = require("file-loader!./file.png");
+
 
 const extractSass = new ExtractTextPlugin({
     filename: "style.css",
@@ -31,7 +33,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'handlebars-loader', // handlebars loader expects raw resource string
+                    'handlebars-loader', 
                     'extract-loader',
                     'css-loader'
                 ]
@@ -50,6 +52,12 @@ module.exports = {
                     'file-loader?name=[name].[ext]&outputPath=img/',
                     'image-webpack-loader'
                 ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: [
+                    'file-loader?name=public/fonts/[name].[ext]'
+                ],
             },
         ]
     },

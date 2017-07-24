@@ -1,10 +1,14 @@
 console.log ("bloker - loaded");
 
 
-import Siema from 'siema';
 
-const siema = new Siema();
-window.siema = siema;
+
+
+
+
+
+// const siema = new Siema();
+// window.siema = siema;
 
 
 // var hit = document.querySelector('[data-js="hit"]');
