@@ -1,26 +1,25 @@
-console.log ("bloker - loaded");
+import $ from 'jquery';
+import {slick} from './slick/slikinit.js';
 
 
+var zanax = true;
+var slider =   $('.header__center__contener__slider-place__slider');
 
 
+$(document).ready(function(){
+    var button =  $('.header__center__contener__slider-place__info__textowe__jubotron__btn');
+    button.on('click', function(){
+ 
+        if ( zanax == true)
+            {
+       slider.slick('slickPause');
+       zanax = false;
+            }
+    else if (zanax == false) {
+         slider.slick('slickPlay');
+         zanax = true;
+    }
 
+});
 
-
-
-// const siema = new Siema();
-// window.siema = siema;
-
-
-// var hit = document.querySelector('[data-js="hit"]');
-
-// hit.addEventListener('click', function () {
-//     var cl = this.getAttribute('class');
-//     if (cl === 'header__center__contener__slider-place__info__textowe__jubotron__btn') {
-//       //  new Siema ({draggable: false,});
-//        console.log("boom");
-//     }
-//     else {
-//         //  new Siema ({draggable: true,});
-//          console.log("boom z elsa");
-//     }
-// });
+});
